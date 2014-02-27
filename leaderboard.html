@@ -9,6 +9,13 @@
 </body>
 
 <template name="leaderboard">
+  <p>
+  {{loginButtons}}
+  </p>
+
+  <input type="button" class="changeOrder" value="Change sort order"/>
+  <input type="button" class="resetScore" value="Reset score"/>
+
   <div class="leaderboard">
     {{#each players}}
       {{> player}}
